@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  beacon-api:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_KEY=${SUPABASE_KEY}
+      - PORT=5000
+    env_file:
+      - .env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+# To run:
+# 1. Make sure you have Docker and Docker Compose installed
+# 2. Create your .env file with Supabase credentials
+# 3. Run: docker-compose up -d
+# 4. Check logs: docker-compose logs -f
+# 5. Stop: docker-compose down

@@ -1,0 +1,72 @@
+═══════════════════════════════════════════════════════════════
+            BEACON DATA COLLECTION API - FILE GUIDE
+═══════════════════════════════════════════════════════════════
+
+📖 WHERE TO START
+═══════════════════════════════════════════════════════════════
+→ 3_STEPS.md              - Ultra-fast deployment (10 minutes)
+→ START_HERE.md           - Complete overview and index
+→ DEPLOYMENT_CHECKLIST.md - Track your progress
+
+📚 DEPLOYMENT GUIDES
+═══════════════════════════════════════════════════════════════
+→ GITHUB_SETUP.md         - Upload code to GitHub
+→ DEPLOY_TO_RENDER.md     - Deploy to Render.com (detailed)
+→ TROUBLESHOOTING.md      - Fix common issues
+
+📘 REFERENCE DOCUMENTATION
+═══════════════════════════════════════════════════════════════
+→ README.md               - Technical documentation
+→ QUICKSTART.md           - Local development setup
+→ PROJECT_OVERVIEW.md     - System architecture
+
+🔧 APPLICATION FILES
+═══════════════════════════════════════════════════════════════
+→ app.py                  - Main Flask API application
+→ requirements.txt        - Python dependencies
+→ schema.sql              - Supabase database schema
+→ test_beacon.py          - Beacon simulator for testing
+
+⚙️ CONFIGURATION FILES
+═══════════════════════════════════════════════════════════════
+→ .env.example            - Environment variables template
+→ render.yaml             - Render auto-deployment config
+→ .gitignore              - Git ignore rules (keeps .env safe)
+
+🐳 DOCKER FILES (Optional)
+═══════════════════════════════════════════════════════════════
+→ Dockerfile              - Container definition
+→ docker-compose.yml      - Multi-container setup
+
+═══════════════════════════════════════════════════════════════
+                      RECOMMENDED PATH
+═══════════════════════════════════════════════════════════════
+
+For beginners:
+  1. Read: 3_STEPS.md
+  2. Follow: GITHUB_SETUP.md
+  3. Follow: DEPLOY_TO_RENDER.md
+  4. Use: DEPLOYMENT_CHECKLIST.md to track progress
+
+For experienced developers:
+  1. Read: START_HERE.md
+  2. Review: app.py and schema.sql
+  3. Deploy using render.yaml
+
+Having issues?
+  → Check: TROUBLESHOOTING.md first
+
+Want to understand the system?
+  → Read: PROJECT_OVERVIEW.md
+
+═══════════════════════════════════════════════════════════════
+                         QUICK TIPS
+═══════════════════════════════════════════════════════════════
+
+✓ Never upload .env file to GitHub
+✓ Use free tiers for proof-of-concept
+✓ Test locally with test_beacon.py before deploying
+✓ Keep your Supabase credentials secure
+✓ Bookmark your deployed API URL
+
+═══════════════════════════════════════════════════════════════
